@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block content %}
+
+
+    <p>
+    Please enter your information below.
+    </p>
+
+
+    {% formfield player.identity label="ID" %}
+
+    {% formfield player.age label="Age" %}
+
+    {% formfield player.gender label="Gender" %}
+
+    {% next_button %}
+
+{% endblock %}
